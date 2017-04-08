@@ -1,7 +1,7 @@
 # Site settings
 title: Somi Bae's CV
 description: baesomi's CV
-favicon: /assets/img/avatar.JPG
+favicon: /assets/img/IMG_3780.JPG
 baseurl: https://baesomi.github.io
 url: https://baesomi.github.io
 rss_url: /pages/atom.xml
@@ -23,63 +23,53 @@ author:
   github: baesomi
   linkedin: smbae0249
   twitter: somisom2
-  gavatar: /resumecard/assets/img/avatar.JPG
+  gavatar: /resumecard/assets/img/IMG_3780.JPG
   stackoverflow:
 #  stackoverflow: 4582127
-  workHistory:
-    - work1:
-      company: Finzsoft Solutions Ltd
-      location: Auckland, New Zealand
-      title: Java Developer
-      started: 2014
-      duration: (2014 - Present)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
-    - work2:
-      company: Agfa HealthCare
-      location: Shanghai, China
-      title: Java Developer
-      started: 2012
-      duration: (2012 - 2014)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
-    - work3:
-      company: Citigroup Services and Technology (China) Limited
-      location: Shanghai, China
-      title: Java Developer
-      started: 2009
-      duration: (2009 - 2012)
-      description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
+  internshipHistory:
+    - internship1:
+      organization: LILY, Nanyang Technology University
+      location: Pioneer, Singapore
+      title : Research Assistent
+      started: 2017
+      duration: (2017.01 - 2017. 02)
+      description: I took a part in Global Internship Program. I develop the smile treatment mobile application for depressed patients.
+
   educationHistory:
     - education1:
-      organization: Northeastern University
-      location: Shenyang, China
+      organization: Gachon University
+      location: Sungnam, South Korea
       degree: Bachelor
-      major: Software Engineering
-      started: 2005
-      duration: (2005 - 2009)
+      major: Software
+      started: 2014
+      duration: (2014 - 2018)
       description: I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description. I am not a description. I am not description.I am not description.
   languages:
     - language1:
-      name: Chinese
+      name: Korea
       proficiency: Native
     - language2:
       name: English
-      proficiency: Professional
+      proficiency: Normal
     - language3:
       name: Japanese
       proficiency: Limit
+    - language4:
+      name: Chinese
+      proficiency: Limit
   programmingSkills:
     - skill1:
-      name: HTML
+      name: Java
       percentage: 100%
     - skill2:
-      name: Bootstrap
-      percentage: 90%
+      name: Android
+      percentage: 100%
     - skill3:
-      name: JavaScript
-      percentage: 70%
+      name: C
+      percentage: 80%
     - skill4:
-      name: AngularJS
-      percentage: 70%
+      name: HTML
+      percentage: 80%
     - skill5:
-      name: Java/Java EE
-      percentage: 90%
+      name: Python
+      percentage: 30%
