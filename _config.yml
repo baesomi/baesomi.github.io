@@ -26,8 +26,8 @@ author:
   gavatar: /resumecard/assets/img/IMG_3780.JPG
   stackoverflow:
 #  stackoverflow: 4582127
-  internshipHistory:
-    - internship1:
+  workHistory:
+    - work1:
       organization: LILY, Nanyang Technology University
       location: Pioneer, Singapore
       title : Research Assistent
