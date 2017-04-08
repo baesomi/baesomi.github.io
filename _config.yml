@@ -23,17 +23,18 @@ author:
   github: baesomi
   linkedin: smbae0249
   twitter: somisom2
-  gavatar: /resumecard/assets/img/IMG_3780.JPG
+  gavatar: /baesomi.github.io/assets/img/IMG_3780.JPG
   stackoverflow:
 #  stackoverflow: 4582127
   workHistory:
     - work1:
-      organization: LILY, Nanyang Technology University
+      company: LILY, Nanyang Technology University
       location: Pioneer, Singapore
       title : Research Assistent
       started: 2017
       duration: (2017.01 - 2017. 02)
-      description: I took a part in Global Internship Program. I develop the smile treatment mobile application for depressed patients.
+      description: I took a part in Global Internship Program.
+      I develop the smile treatment mobile application for depressed patients.
 
   educationHistory:
     - education1:
