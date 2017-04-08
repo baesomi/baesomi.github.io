@@ -1,7 +1,7 @@
 # Site settings
 title: Somi Bae's CV
 description: baesomi's CV
-favicon: /assets/img/IMG_3780.JPG
+favicon: /assets/img/avatar.JPG
 baseurl: https://baesomi.github.io
 url: https://baesomi.github.io
 rss_url: /pages/atom.xml
@@ -23,12 +23,12 @@ author:
   github: baesomi
   linkedin: smbae0249
   twitter: somisom2
-  gavatar: /baesomi.github.io/assets/img/IMG_3780.JPG
+  gavatar: /resumecard/assets/img/avatar.JPG
   stackoverflow:
 #  stackoverflow: 4582127
   workHistory:
   - work1:
-    company: LILY, Nanyang Technology University
+    company: LILY in Nanyang Technology University
     location: Pioneer, Singapore
     title: Research Assistent
     started: 2017
