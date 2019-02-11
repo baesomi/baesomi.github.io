@@ -1,342 +1,72 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>	  <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>		 <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>		 <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Bae Somi - Free Thinker - Entertainment</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+---
+layout: default
+---
 
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/vendor/jquery.hashchange.min.js"></script>
-  <script src="js/vendor/jquery.easytabs.min.js"></script>
+<header class="header">
+  <div class="header-title">
+    <a href="{{ site.url }}{{ site.baseurl }}">{{ site.name }}</a>
+  </div>
+  <nav class="header-nav">
+    {% for nav in site.nav %}
+    {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    {% else %}
+    <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
+    {% endif %}
+    {% endfor %}
+  </nav>
+</header>
 
-  <script src="js/main.js"></script>
-  <!--[if lt IE 9]>
-	  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-	  <![endif]-->
-</head>
-  <body class="bg-fixed bg-1">
-<!--[if lt IE 7]>
-	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-	<![endif]-->
-   <div class="main-container">
-	<div class="main wrapper clearfix">
-	  <!-- Header Start -->
-		<header id="header">
-			<div id="logo">
-				<h2>
-					Somi Bae
-				</h2>
-				<h4>
-					SW Developer
-				</h4>
-			</div>
-		</header>
-		<!-- Header End -->
-		<!-- Main Tab Container -->
-		<div id="tab-container" class="tab-container">
-		  <!-- Tab List -->
-			<ul class='etabs'>
-				<li class='tab' id="tab-about">
-				  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
-				</li>
-				<li class='tab'>
-				  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
-				</li>
-				<li class='tab'>
-				  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
-				</li>
-				<li class='tab'>
-				  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
-				</li>
-			</ul>
-		  <!-- End Tab List -->
-			<div id="tab-data-wrap">
-			  <!-- About Tab Data -->
-				<div id="about">
-					<section class="clearfix">
-						<div class="g2">
-							<div class="photo">
-								<img src="https://t1.daumcdn.net/cfile/tistory/99C10A3C5B12A92C2A" alt="Bae Somi">
-							</div>
-							<div class="info">
-								<h2>
-									Somi Bae 
-								</h2>
-								<h4>
-									Now I'm Junior Developer! But I will be a GURU :)
-								</h4>
-								<p>
-									My skills are focused on Web programming. 
-									Even now I learn something for my skills up.
-									That is Python, Deep leraning, RxJAVA (2018.12~)
-								</p>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="main-links sidebar">
-								<ul>
-									<li>
-										<a href="#resume">View My Resume</a>
-									</li>
-									<li>
-										<a href="#portfolio">My Portfolio</a>
-									</li>
-									<li>
-										<a href="#contact">Hire me for your next project</a>
-									</li>
-									<li>
-										<a href="#features">Features</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="break"></div>
-						<div class="contact-info">
-						  <div class="g1">
-							<div class="item-box clearfix">
-							  <i class="icon-envelope"></i>
-							  <div class="item-data">
-								<h3><a href="mailto:smbae0249@gmail.com">smbae0249@gmail.com</a></h3>
-								<p>Email Address</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="g1">
-							<div class="item-box clearfix">
-							  <i class="icon-facebook"></i>
-							  <div class="item-data">
-								<h3><a href="https://www.facebook.com/somi.bae.92">somi.bae</a></h3>
-								<p>Facebook Profile</p>
-							  </div>
-							</div>
-						  </div>
-						  <div class="g1">
-							<div class="item-box clearfix">
-							  <i class="fab fa-linkedin"></i>
-							  <div class="item-data">
-								<h3><a href="https://www.linkedin.com/in/somi-bae-1729bb116">@somisom2</a></h3>
-								<p>LinkedIn</p>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					</section><!-- content -->
-				</div>
-			  <!-- End About Tab Data -->
-			  <!-- Resume Tab Data -->
-				<div id="resume">
-					<section class="clearfix">
-						<div class="g2">
-							<h3>
-								Work Experience
-							</h3>
-							<ul class="no-list work">
-								<li>
-									<h5>
-										Web developer
-									</h5><span class="label label-info">2017-now</span>
-									<p>
-										HandySoft Researcher
-									</p>
-									<h5>
-										NTU LILY Reaserch assistant (Singapore)
-									</h5>
-									<span class="label label-info">2017.01-2017.02</span>
-									<p>
-										Mobile application to coaching smile for depressed patient based on face recognition.
-									</p>
-								</li>
-								<li>
-									<h5>
-										K-SW Forum Internship
-									</h5><span class="label label-info">2017.07-2017.07</span>
-									<p>
-										Log analysis web page based on spring framework
-									</p>
-								</li>
-							</ul>
-							<h3>
-								Education
-							</h3>
-							<ul class="no-list work">
-								<li>
-									<h5>
-										Gachon University 
-									</h5>
-									<span class="label label-warning">2014-2018</span>
-									<p>
-										Software Engineering / Management
-									</p>
-									<p>	
-										Major is Software minor is Management
-									</p>
-								</li>
-							</ul>
-						</div>
-						<div class="g1">
-							<div class="sidebar">
-								<h3>
-									Skills
-								</h3>
-								<i class="fab fa-html5"></i>
-								<div class="meter emerald">
-									<span style="width: 80%"><span>HTML</span></span>
-								</div>
-								<i class="fab fa-java"></i>
-								<div class="meter carrot">
-									<span style="width: 80%"><span>Java</span></span>
-								</div>
-								<i class="fab fa-js-square"></i>
-								<div class="meter wisteria">
-									<span style="width: 80%"><span>jQuery/JavaScript</span></span>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			  <!-- End Resume Tab Data -->
-			  <!-- Portfolio Tab Data -->
-				<div id="portfolio">
-					<section class="clearfix">
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/99904A3C5B12A92B2C" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/99904A3C5B12A92B2C" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/99A6943C5B12A92D02" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/99A6943C5B12A92D02" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/9948DC485B12AF0407" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/9948DC485B12AF0407" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="break"></div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/998B213C5B12A92C1A" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/998B213C5B12A92C1A" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/9951213C5B12A92B33" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/9951213C5B12A92B33" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/999951485B12AF0516" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/999951485B12AF0516" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="g1">
-							<div class="image">
-								<img src="https://t1.daumcdn.net/cfile/tistory/9927463C5B12A92C0D" alt="">
-								<div class="image-overlay">
-									<div class="image-link">
-										<a href="https://t1.daumcdn.net/cfile/tistory/9927463C5B12A92C0D" class="btn">Full View</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			  <!-- End Portfolio Data -->
-			  <!-- Contact Tab Data -->
-				<div id="contact">
-					<section class="clearfix">
-					   <div class="g1">
-						 <div class="sny-icon-box">
-						   <div class="sny-icon">
-							  <i class="icon-globe"></i>
-							</div>
-							<div class="sny-icon-content">
-							  <h4>My Address</h4>
-							  <p>Some Apartment 405 in a jungle nearby a restaurant</p>
-							</div>
-						 </div>
-					   </div>
-					   <div class="g1">
-						 <div class="sny-icon-box">
-						   <div class="sny-icon">
-							  <i class="icon-phone"></i>
-							</div>
-							<div class="sny-icon-content">
-							  <h4>Mobile Number</h4>
-							  <p>999-9999-999<br/>999-1112-999</p>
-							</div>
-						 </div>
-					   </div>
-					   <div class="g1">
-						 <div class="sny-icon-box">
-						   <div class="sny-icon">
-							  <i class="icon-user"></i>
-							</div>
-							<div class="sny-icon-content">
-							  <h4>About Me</h4>
-							  <p>I love to work, so don't be shy, i am just an email away.</p>
-							</div>
-						 </div>
-					   </div>
-					   <div class="break"></div>
-					   
-					</section>
-				</div>
-			  <!-- End Contact Data -->
-			</div>
-		</div>
-		<!-- End Tab Container -->
-		<footer>
-		</footer>
-	</div><!-- #main -->
-</div><!-- #main-container -->
+<div class="list">
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% else %}
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <div class="list-post">
+    {% if post.link %}
+    <a href="{{ post.link }}">
+    {% else %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
+    {% endif %}  
+      <div class="list-post-date">
+        <time>{{ post.date | date_to_string }}</time>
+      </div>
+      <div class="list-post-title">
+        {{ post.title }}
+      </div>
+      {% if post.description %}
+      <div class="list-post-desc">
+        {{ post.description }}
+      </div>
+      {% endif %}
+    </a>
 
 
+  </div>
+{% endfor %}
+  <!-- Pagination links -->
+  <div class="list-pagination">
+    <span class="list-pagination-previous">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">
+          &#xE000; previous
+        </a>
+      {% else %}
 
-</body>
-</html>
+      {% endif %}
+    </span>
+
+    <span class="list-pagination-next">
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">
+          next &#xE001;
+        </a>
+      {% else %}
+
+      {% endif %}
+    </span>
+
+  </div>
+{% endif %}
+</div>
