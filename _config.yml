@@ -1,9 +1,9 @@
 # Site settings
-title: Liang Ke Jin
-description: Liang Ke Jin
+title: Bae So Mi
+description: Bae So Mi
 favicon: /assets/img/avatar.JPG
 baseurl:
-url: https://liungkejin.github.io
+url: https://baesomi.github.io
 rss_url:
 
 # Build settings
@@ -11,7 +11,7 @@ rss_url:
 highlight: true
 #highlighter: rouge
 
-timezone: Asia/Shanghai
+timezone: Asia/South Korea
 
 markdown: kramdown
 kramdown:
