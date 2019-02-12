@@ -7,7 +7,6 @@ url: https://baesomi.github.io
 rss_url:
 
 # Build settings
-encoding: UTF-8
 highlight: true
 #highlighter: rouge
 
