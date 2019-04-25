@@ -7,9 +7,7 @@ pulished: true
 excerpt_separator: "```"
 ---
 
-##SOMPAGE
-
-µåµð¾î ¿ÀÇÂ!
+##~SOMPAGE GRAND OPEN~
 
 ```bash
 print(makePageName("SOMI"))
