@@ -2,16 +2,15 @@
 layout: post_layout
 title: Intro
 time: 2019-04-25 THURSDAY
-location: Bundang
+location: Korea
 pulished: true
 excerpt_separator: "```"
 ---
 
-Somi + Homepage => "SOMPAGE"
+##SOMPAGE
 
-TEST
-
+µåµð¾î ¿ÀÇÂ!
 
 ```bash
-echo "Hello world!";
+print(makePageName("SOMI"))
 ```
