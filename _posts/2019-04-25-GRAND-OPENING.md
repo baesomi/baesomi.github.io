@@ -1,14 +1,14 @@
 ---
 layout: post_layout
-title: GRAND OPEN
+title: GRAND OPENING
 time: 2019-04-25 THURSDAY
 location: Korea
 pulished: true
 excerpt_separator: "```"
 ---
 
-##~SOMPAGE GRAND OPEN~
+SOMPAGE GRAND OPENING
 
 ```bash
-print(makePageName("SOMI"))
+SOMPAGE IS OUTPUT OF makePageName("SOMI")
 ```
