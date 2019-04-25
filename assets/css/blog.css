@@ -32,7 +32,7 @@
   margin-top: 0;
   margin-bottom: 1rem;
   /*font-size: 18px;*/
-  font-family: courier;
+  font-family: "Roboto Slab", "Merriweather", "Open Sans";
   display: inline-block;
 }
 
@@ -141,7 +141,7 @@ p.readmore {
 }
 
 /**
- * 文章全文
+ * �뻼塋졾뀲�뻼
  */
 
 blockquote {
