@@ -1,6 +1,6 @@
 ---
 layout: post_layout
-title: Intro
+title: GRAND OPEN
 time: 2019-04-25 THURSDAY
 location: Korea
 pulished: true
