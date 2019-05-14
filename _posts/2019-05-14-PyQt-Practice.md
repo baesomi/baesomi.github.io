@@ -7,18 +7,18 @@ pulished: true
 excerpt_separator: "```"
 ---
 
-Recently, I practice about PyQt library for GUI Program.\
-I study PyQt while I follow up this book that link is 'https://wikidocs.net/book/2165'\
-You can read it for free!\
-I practiced examples of the most of this book.\
+Recently, I practice about PyQt library for GUI Program.  
+I study PyQt while I follow up this book that link is 'https://wikidocs.net/book/2165'  
+You can read it for free!  
+I practiced examples of the most of this book.  
+  
+And I programmed own my application using PyQt.  
+That is 'Lotto Number Generator'.  
 
-And I programmed own my application using PyQt.\
-That is 'Lotto Number Generator'.\
-
-Sometimes, I see lotto number prediction of someone who is social influencer. (instagram id : @kkotpa_flower)\
-The number of predicted number from him is more than 6 numbers.\
-Then I need to picked only 6 numbers. This job is very complicated for me.\
-So, I make the app for easier picking.\
+Sometimes, I see lotto number prediction of someone who is social influencer. (instagram id : @kkotpa_flower)  
+The number of predicted number from him is more than 6 numbers.  
+Then I need to picked only 6 numbers. This job is very complicated for me.  
+So, I make the app for easier picking.  
 
 
 ```bash
@@ -101,7 +101,7 @@ class LottoApp(QWidget):
             ntime = self.ntimes_le.text()
             print("num list : " + str(used_num_list))
             if len(used_num_list) < 6:
-                QMessageBox.warning(self, 'WARN', 'Please Enter the numbers that 6 numbers. No Redundant', QMessageBox.Yes)
+                QMessageBox.warning(self, 'WARN', 'Please Enter the numbers at least 6 numbers. No Redundant', QMessageBox.Yes)
             else:
                 self.generate_lotto_num(used_num_list, ntime)
 
