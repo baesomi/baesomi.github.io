@@ -7,18 +7,18 @@ pulished: true
 excerpt_separator: "```"
 ---
 
-Recently, I practice about PyQt library for GUI Program.
-I study PyQt while I follow up this book that link is 'https://wikidocs.net/book/2165'
-You can read it for free!
-I practiced examples of the most of this book.
+Recently, I practice about PyQt library for GUI Program.\
+I study PyQt while I follow up this book that link is 'https://wikidocs.net/book/2165'\
+You can read it for free!\
+I practiced examples of the most of this book.\
 
-And I programmed own my application using PyQt.
-That is 'Lotto Number Generator'.
+And I programmed own my application using PyQt.\
+That is 'Lotto Number Generator'.\
 
-Sometimes, I see lotto number prediction of someone who is social influencer. (instagram id : @kkotpa_flower)
-The number of predicted number from him is more than 6 numbers.
-Then I need to picked only 6 numbers. This job is very complicated for me.
-So, I make the app for easier picking.
+Sometimes, I see lotto number prediction of someone who is social influencer. (instagram id : @kkotpa_flower)\
+The number of predicted number from him is more than 6 numbers.\
+Then I need to picked only 6 numbers. This job is very complicated for me.\
+So, I make the app for easier picking.\
 
 
 ```bash
@@ -36,24 +36,23 @@ class LottoApp(QWidget):
 
     def initUI(self):
 
-        # 생성 수 범위 입력
-        self.first_input_lbl = QLabel('원하는 숫자를 입력하세요.')
-        self.subexplain_lbl = QLabel('최소 6개 이상, 예: 1,2,3,4,5,6')
+        
+        self.first_input_lbl = QLabel('Enter the numbers 1 to 45')
+        self.subexplain_lbl = QLabel('at least 6 numbers, ex) 1,2,3,4,5,6')
         subFont = self.subexplain_lbl.font()
         subFont.setPointSize(9)
         subFont.setBold(True)
         self.subexplain_lbl.setFont(subFont)
         self.used_num_le = QLineEdit()
-        self.used_num_le.setPlaceholderText('숫자를 입력하세요.')
+        self.used_num_le.setPlaceholderText('Enter')
         self.used_num_le.setFocus()
 
-        # 반복횟수
-        self.second_input_lbl = QLabel('횟수를 입력하세요.')
+        self.second_input_lbl = QLabel('Enter the times')
         self.ntimes_le = QLineEdit()
-        self.ntimes_le.setPlaceholderText('1회 시 1 입력')
+        self.ntimes_le.setPlaceholderText('If you want 1 time, enter only 1')
         self.ntimes_le.setValidator(QIntValidator(0, 99))
 
-        self.generate_btn = QPushButton('생성')
+        self.generate_btn = QPushButton('Generation!')
         self.generate_btn.clicked.connect(self.validate)  # listener
 
         vBox = QVBoxLayout()
@@ -67,7 +66,6 @@ class LottoApp(QWidget):
         vBox.addStretch(1)
         vBox.addWidget(self.generate_btn)
 
-        # 결과 다이얼로그 창
         self.dialog = QDialog()
 
         self.setLayout(vBox)
@@ -81,7 +79,7 @@ class LottoApp(QWidget):
         for i in range(int(times)):
             temp_list = random.sample(num_list, 6)
             temp_list.sort()
-            result_str += str(i+1) + "번째 -> " + str(temp_list) + "\n"
+            result_str += str(i+1) + "time -> " + str(temp_list) + "\n"
 
         self.result_lbl = QLabel()
         self.result_lbl.setText(result_str)
@@ -90,20 +88,20 @@ class LottoApp(QWidget):
         resultBox.addWidget(self.result_lbl)
         self.dialog = QDialog()
         self.dialog.setLayout(resultBox)
-        self.dialog.setWindowTitle('LottoApp - 결과')
+        self.dialog.setWindowTitle('LottoApp - Result')
         self.dialog.setGeometry(300, 300, 300, 300)
         self.dialog.show()
 
 
     def validate(self):
         if self.used_num_le.text() == '' or self.ntimes_le.text() == '' :
-            QMessageBox.warning(self, '경고', '값을 모두 채워주세요.', QMessageBox.Yes)
+            QMessageBox.warning(self, 'WARN', 'Please Fill the blank', QMessageBox.Yes)
         else:
             used_num_list = list(set(self.used_num_le.text().split(",")))
             ntime = self.ntimes_le.text()
             print("num list : " + str(used_num_list))
             if len(used_num_list) < 6:
-                QMessageBox.warning(self, '경고', '중복되지 않도록 6개 이상의 숫자를 입력해주세요. ', QMessageBox.Yes)
+                QMessageBox.warning(self, 'WARN', 'Please Enter the numbers that 6 numbers. No Redundant', QMessageBox.Yes)
             else:
                 self.generate_lotto_num(used_num_list, ntime)
 
