@@ -8,17 +8,17 @@ excerpt_separator: "```"
 ---
 
 Recently, I practice about PyQt library for GUI Program.  
-I study PyQt while I follow up this book that link is 'https://wikidocs.net/book/2165'  
+I study PyQt while I follow up this book that link is <https://wikidocs.net/book/2165>  
 You can read it for free!  
 I practiced examples of the most of this book.  
   
 And I programmed own my application using PyQt.  
 That is 'Lotto Number Generator'.  
 
-Sometimes, I see lotto number prediction of someone who is social influencer. (instagram id : @kkotpa_flower)  
+Sometimes, I see lotto number prediction of someone who is social influencer. (INSTAGRAM ID : @kkotppa_flower)  
 The number of predicted number from him is more than 6 numbers.  
-Then I need to picked only 6 numbers. This job is very complicated for me.  
-So, I make the app for easier picking.  
+Then, I need to picked only 6 numbers. It is very complicated job to me.  
+So I make the app for easier picking.  
 
 
 ```bash
