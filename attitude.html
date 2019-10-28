@@ -1,0 +1,27 @@
+---
+layout: page
+titles:
+  # @start locale config
+  en      : &EN       Attitude
+  en-GB   : *EN
+  en-US   : *EN
+  en-CA   : *EN
+  en-AU   : *EN
+  ko      : &KO       애티튜드
+  ko-KR   : *KO
+  # @end locale config
+---
+
+
+<div class="layout--archive js-all">
+  {%- include tags.html -%}
+  <div class="js-result layout--archive__result d-none">
+    {%- include article-list.html articles=site.posts2 type='brief' show_info=true reverse=true group_by='year' -%}
+  </div>
+</div>
+
+<script>
+  {%- include scripts/archieve.js -%}
+</script>
+
+{{ content }}
