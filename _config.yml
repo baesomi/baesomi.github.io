@@ -55,7 +55,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: https://github.com/baesomi/baesomi.github.io.git
+repository: baesomi/baesomi.github.io
 repository_tree: master
 
 
