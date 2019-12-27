@@ -30,4 +30,3 @@ sitemap:
 	{% endunless %}
   {% endfor %}
 </urlset>
-</xml>
