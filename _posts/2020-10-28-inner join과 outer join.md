@@ -1,5 +1,4 @@
 ---
-layout: page
 title: inner join과 outer join
 tags: database
 key: page-single
@@ -33,10 +32,10 @@ comments: true
 | NATURAL JOIN | 특정 테이블의 같은 이름을 가진 컬럼 간의 조인집합을 출력한다. |
 
   
- 
+   
 이들 중 **INNER JOIN** 과 **OUTER JOIN**에 대해서 알아봅시다!
- 
-
+  
+  
 ## 예시 테이블
   
 
