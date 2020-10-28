@@ -1,7 +1,7 @@
 ---
 title: inner join과 outer join
 tags: database
-key: page-single
+key: 20201028
 comment: true
 comments: true
 ---
