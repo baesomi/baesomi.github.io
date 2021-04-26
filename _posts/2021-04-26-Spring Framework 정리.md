@@ -9,9 +9,9 @@ comments: true
     - Spring Framework란? 
     Java 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크입니다.
 
-    애플리케이션 프레임워크 : 특정 분야에 국한 되지 않고 전 영역을 포괄하는 범용적인 프레임워크를 말한다.
-    경량급 프레임워크 : 단순한 웹컨테이너에서도 엔터프라이즈 개발의 고급기술을 대부분 사용할 수 있다. 
-    엔터프라이즈 개발 : 개발자가 복잡하고 실수하기 쉬운 low level에 많이 신경쓰지 않으면서, Business Logic 개발에 전념할 수 있도록 해줍니다.
+    -- 애플리케이션 프레임워크 : 특정 분야에 국한 되지 않고 전 영역을 포괄하는 범용적인 프레임워크를 말한다.
+    -- 경량급 프레임워크 : 단순한 웹컨테이너에서도 엔터프라이즈 개발의 고급기술을 대부분 사용할 수 있다. 
+    -- 엔터프라이즈 개발 : 개발자가 복잡하고 실수하기 쉬운 low level에 많이 신경쓰지 않으면서, Business Logic 개발에 전념할 수 있도록 해줍니다.
     - Spring Framework의 특징
         1. 컨테이너 역할 : Spring 컨테이너는 Java 객체의 생명주기를 관리하며, Spring 컨테이너로부터 필요한 객체를 가져와서 사용할 수 있다.
         2. DI (의존성 주입) : Spring은 설정파일이나 어노테이션을 통해서 객체간의 의존관계를 설정할 수 있도록 한다.
@@ -63,15 +63,16 @@ comments: true
 
         (3) Spring AOP는 메서드 조인포인트만 지원한다.
 
-        Spring은 동적 프록시를 기반으로 AOP를 구현하므로 메서드 조인 포인트만 지원한다. (런타임 시점에만 지원한다) 그런데 AspectJ와 같은 고급 AOP프레임워클르 사용하면 다양한 작업에 부가기능을 사용할 수 있다. (객체의 생성, 필드값의 조회와 조작 등)
+        Spring은 동적 프록시를 기반으로 AOP를 구현하므로 메서드 조인 포인트만 지원한다. (런타임 시점에만 지원한다) 그런데 AspectJ와 같은 고급 AOP프레임워크를 사용하면 다양한 작업에 부가기능을 사용할 수 있다. (객체의 생성, 필드값의 조회와 조작 등)
 
-        - 구현방식
-            - XML 기반의 POJO 클래스를 이용한 AOP 구현
+
+    - 구현방식
+        - XML 기반의 POJO 클래스를 이용한 AOP 구현
 
                 Advice 클래스 작성 후, xml설정파일에 <aop:config> 로 애스펙트 설정
 
-            - @Aspect 어노테이션을 이용한 AOP 구현
-        - Advice 종류
+        - @Aspect 어노테이션을 이용한 AOP 구현
+    - Advice 종류
 
             Around : Join point 앞 뒤로 실행
 
@@ -81,11 +82,11 @@ comments: true
 
             After Throwing : Join point호출 후 Exception이 발생할 때 실행되는 Advice
 
-        - Join point 인터페이스 (Advice 클래스)
+    - Join point 인터페이스 (Advice 클래스)
 
             Around 어드바이스는 join point의 하위 클래스인 ProceedingJoinPoint 타입의 파라미터를 필수적으로 선언해야한다.
 
-        - Point cut 표현식 문법 대표적인 사용은 excecution()이다.
+    - Point cut 표현식 문법 대표적인 사용은 excecution()이다.
 
         ```jsx
         excecution([접근제한자 패턴(생략가능)] 리턴타입패턴 [타입패턴.] 
