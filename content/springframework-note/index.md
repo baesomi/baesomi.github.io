@@ -8,8 +8,7 @@ categories: 알쓸개잡 featured
 ---
 
 1. Spring Framework란?
-    - Spring Framework란? 
-    Java 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크입니다.
+    - Spring Framework란 Java 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크입니다.    
         - 애플리케이션 프레임워크 : 특정 분야에 국한 되지 않고 전 영역을 포괄하는 범용적인 프레임워크를 말한다.
         - 경량급 프레임워크 : 단순한 웹컨테이너에서도 엔터프라이즈 개발의 고급기술을 대부분 사용할 수 있다. 
         - 엔터프라이즈 개발 : 개발자가 복잡하고 실수하기 쉬운 low level에 많이 신경쓰지 않으면서, Business Logic 개발에 전념할 수 있도록 해줍니다.
@@ -91,3 +90,4 @@ categories: 알쓸개잡 featured
     - 모델2 : Controller 역할을 Servlet에서 담당함
     - Front Controller 패턴 : 클라이언트가 보낸 요청을 받아서 공통적인 작업을 먼저 수행 (인증 or 권한체크) - Dispatcher Servlet
     - 흐름 : Dispatcher Servlet → Handler Mapping → Controller → ModelAndView → View Resolver → View
+    
