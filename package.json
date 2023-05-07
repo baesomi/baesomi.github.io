@@ -33,6 +33,7 @@
     "prismjs": "^1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-rotating-text": "^1.4.1",
     "sass": "^1.43.4",
     "typeface-montserrat": "^1.1.13"
@@ -59,9 +60,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog"
+    "url": "git+https://github.com/zoomkoding/zoomkoding-gatsby-blog.git"
   },
   "bugs": {
     "url": "https://github.com/zoomkoding/zoomkoding-gatsby-blog/issues"
-  }
+  },
+  "homepage": "https://github.com/zoomkoding/zoomkoding-gatsby-blog#readme",
+  "main": "gatsby-browser.js"
 }

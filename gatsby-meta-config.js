@@ -55,7 +55,7 @@ module.exports = {
       // ========================================================
       {
         date: '2021.09 ~ 2022.04',
-        activity: 'NEXON',
+        activity: 'NEXON KOREA',
         links: {
           post: '',
           github: '',
@@ -66,7 +66,7 @@ module.exports = {
       // ========================================================
       {
         date: '2017.12 ~ 2021.09',
-        activity: '핸디소프트',
+        activity: 'Handysoft',
         links: {
           post: '',
           github: '',
@@ -77,7 +77,7 @@ module.exports = {
       // ========================================================
       {
         date: '2014.03 ~ 2018.02',
-        activity: '가천대학교 소프트웨어설계경영',
+        activity: 'Department of Software, Gachon University',
         links: {
           post: '',
           github: '',
